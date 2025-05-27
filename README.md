@@ -14,17 +14,12 @@ Requirements
 ------------
 
 - Python >= 2.7
-- [requests](https://docs.python-requests.org/en/latest/user/install/)
+- [requests][req]
 
 Imgur API Documentation
 -----------------------
 
-Our developer documentation can be found [here](https://api.imgur.com/).
-
-Community
----------
-
-The best way to reach out to Imgur for API support is emailing us at api@imgur.com.
+See the [developer documentation][devdocs].
 
 Installation
 ------------
@@ -114,11 +109,11 @@ To view client and user credit information, use the `credits` attribute of `Imgu
 * ClientLimit
 * ClientRemaining
 
-For more information about rate-limiting, please see the note in our [docs](https://api.imgur.com/#limits)!
+For more information about rate-limiting, please see the note in our [docs][devdocs1].
 
 Examples
 ------------
-Examples can be found [here](EXAMPLES.md)
+Examples are [available](EXAMPLES.md)
 
 ## ImgurClient Functions
 
@@ -234,3 +229,6 @@ Imgur entry points
 | imgur.com/a/{album_id}#{image_id}   | single image from an album     |
 | imgur.com/gallery/{gallery_post_id} | gallery                        |
 
+[devdocs]:https://api.imgur.com/
+[devdocs1]:https://api.imgur.com/#limits
+[req]:https://docs.python-requests.org/en/latest/user/install/
