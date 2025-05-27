@@ -612,7 +612,7 @@ class ImgurClient(object):
         }
         data.update({meta: config[meta] for meta in set(self.allowed_image_fields).intersection(config.keys())})
 
-        return self.make_request('POST', 'upload', data, anon)
+        return self.make_request('POST', 'image', data, anon)
 
     def upload_from_url(self, url, config=None, anon=True):
         if not config:
